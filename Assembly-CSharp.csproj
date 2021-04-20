@@ -36,6 +36,7 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
+     <Compile Include="Assets\GameScript.cs" />
      <Compile Include="Assets\ITetroScript.cs" />
      <Compile Include="Assets\JTetroScript.cs" />
      <Compile Include="Assets\LTetroScript.cs" />
@@ -51,6 +52,7 @@
      <Compile Include="Assets\SqTetroScript.cs" />
      <Compile Include="Assets\TTetroScript.cs" />
      <Compile Include="Assets\ZTetroScript.cs" />
+     <None Include="Assets\Fantasy Skybox FREE\Readme.txt" />
      <None Include="Assets\SampleScenes\Shaders\Skybox-Procedural.shader" />
     <Reference Include="UnityEngine">
         <HintPath>C:/Program Files/Unity/Hub/Editor/2019.4.18f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
