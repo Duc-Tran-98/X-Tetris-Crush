@@ -5,11 +5,12 @@ using UnityEngine;
 public class LTetroScript : MonoBehaviour
 {
     // Start is called before the first frame update
+    public bool isActive = true;
     void Start()
     {
         Color tetroColor = new Color(
-            Random.Range(0f, 1f), 
-            Random.Range(0f, 1f), 
+            Random.Range(0f, 1f),
+            Random.Range(0f, 1f),
             Random.Range(0f, 1f)
         );
         changeTetroColor(tetroColor);
@@ -18,7 +19,8 @@ public class LTetroScript : MonoBehaviour
     void changeTetroColor(Color newColor)
     {
         Renderer[] childRenderers = GetComponentsInChildren<Renderer>();
-        foreach (Renderer rend in childRenderers){
+        foreach (Renderer rend in childRenderers)
+        {
             rend.material.color = newColor;
         }
     }
@@ -28,4 +30,5 @@ public class LTetroScript : MonoBehaviour
     {
 
     }
+
 }
